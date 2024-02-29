@@ -1,0 +1,33 @@
+{
+    "slides": [
+        {
+            "src": "https://picsum.photos/seed/img5/800/400",
+            "alt": "A coffe photo",
+            "title": "To create an environment in which knowlegde about coffee and its sphere can be obtained"
+        },
+
+        {
+            "src": "https://picsum.photos/seed/img4/800/400",
+            "alt": "Coffee in code out, this is the way of eternal life and empowerment of the soul",
+            "title": "Coffee in code out, this is the way of eternal life and empowerment of the soul"
+        },
+
+        {
+            "src": "https://picsum.photos/seed/img1/800/400",
+            "alt": "Image 1 for carousel",
+            "title": "This is a great introduction to the coddee industry's best beans on the planet"
+        },
+
+        {
+            "src": "https://picsum.photos/seed/img2/800/400",
+            "alt": "A coffe photo",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+
+        {
+            "src": "https://picsum.photos/seed/img3/800/400",
+            "alt": "A coffe photo",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+    ]
+}

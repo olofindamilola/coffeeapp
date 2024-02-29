@@ -1,0 +1,64 @@
+.container {
+    height: 100%;
+  }
+  
+  .nav-container {
+    padding: 20px 80px;
+    background-color: rgba(0, 0, 0, 0.147);
+  
+    .logoContainer {
+      display: flex;
+  
+      .logo {
+        // your logo styles
+      }
+  
+      .search {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+        margin-bottom: 30px;
+  
+        
+        input {
+            padding: 5px; 
+            margin: 20px; 
+            border-bottom: 3px solid black; 
+            border: none;
+            border-radius: 4px;
+            width: 150px;
+            height: 20px;
+            outline:none;
+            background-color:  rgba(0, 0, 0, 0.147)
+        }
+      }
+      .socials {
+        display: flex;
+        gap: 10px;
+    
+        img {
+          width: 20px; 
+          height: auto;
+          
+        }
+      }
+    
+    }
+  
+    .nav-links {
+      display: flex;
+      justify-content: flex-end;
+      gap: 50px;
+      font-size: large;
+      font-weight: bold;
+  
+      .nav-link {
+        a {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  

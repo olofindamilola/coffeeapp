@@ -1,0 +1,67 @@
+.app {
+    display: flex;
+  }
+  
+  .articles-container {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+  
+    .article-content {
+      flex: 1;
+      width: 50%; // Adjust the width as needed
+    }
+  
+    button {
+      background-color: #2b030316;
+      color: black;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: black;
+        color: #fff;
+      }
+    }
+  }
+  
+  .side-grid {
+    flex: 1;
+    padding: 20px;
+  
+    .shop,
+    .event,
+    .scoreboard {
+      margin-bottom: 20px;
+  
+      button {
+        background-color: #2b030316;
+        color: black;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: black;
+          color: #fff;
+        }
+      }
+    }
+  }
+  

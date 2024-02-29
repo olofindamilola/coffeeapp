@@ -2,6 +2,7 @@ import React from 'react'
 import Pagination from '../pagination/Pagination'
 import Article from '../pagination/Article'
 import { useState } from 'react';
+import './articles.scss';
 
 import img1 from "../../images/instagram-image-1.png";
 import img2 from "../../images/instagram-image-2.png";
@@ -83,13 +84,47 @@ const Articles = () => {
 
     const handlePageChange = (pageNumber) => setCurrentPage(pageNumber);
   return (
+    
     <div className='app'>
         <div className="articles-container">
             {currentArticles.map((article, index) => (
                 <Article key={index} imageUrl={article.imageUrl} title={article.title} published={article.published} content={article.content}/>
             ))}
+            <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange}/>
         </div>
-        <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange}/>
+        
+
+        <div className="side-grid">
+        
+        <div className="shop">
+          <h1>WBC Shop</h1>
+          <h6>Your shopping cart is empty</h6>
+          <button>Vist the shop</button>
+        </div>
+
+        <div className="event">
+          <h1>Next event</h1>
+          <h2>World Barista Cup 2021</h2>
+          <p>Copenhagen Denmark</p>
+          <p>Dates: 25th-27th August 2011</p>
+          <p>Theme: SENSORY</p>
+          <button>Sign up now</button>
+        </div>
+
+        <div className="scoreboard">
+          <h1>Scoreboard</h1>
+          <h2>List of winners from last year</h2>
+          <ol>
+            <li>2021 - ?</li>
+            <li>2020 - Denmark</li>
+            <li>2021 - Sweden</li>
+            <li>2021 - Turkey</li>
+            <li>2021 - Italy</li>
+            <li>2021 - Canada</li>
+            <li>2021 - Germany</li>
+          </ol>
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,14 +1,16 @@
+// Pagination.scss
 .pagination {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     margin-top: 20px; 
-
+  
     button {
-      background-color: #2b030316;
+      background-color: #fff;
       color: black;
       padding: 10px;
-      border: none;
+      
+      border: 2px thin rgba(0, 0, 0, 0.234);
       cursor: pointer;
       transition: background-color 0.3s ease; 
   
@@ -16,11 +18,25 @@
         background-color: black;
         color: #fff;
       }
+  
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
     }
+
+    .prev{
+        margin-left: 20%;
+      }
   
     .page-info {
+      display: flex;
+      align-items: center;
+  
       p {
         margin: 0;
+        margin-left: 10px; // Add some space between buttons and page count
       }
     }
   }
+  

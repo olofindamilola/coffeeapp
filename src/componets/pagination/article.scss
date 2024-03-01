@@ -1,0 +1,42 @@
+.article {
+    display: flex;
+    align-items: center; // Center items vertically
+    margin-bottom: 20px;
+    margin-top: 10px;
+  
+    .img-container {
+      padding-left: 20%; 
+    }
+  
+    img {
+      width: auto; 
+        height: 140px; //
+      object-fit: cover; // Cover the container while maintaining aspect ratio
+    }
+  
+    .article-content {
+      flex: 1;
+      margin-right: 10px;
+      margin-left: 10px
+    }
+  
+    h5, h6, h3 {
+      margin-bottom: 10px; 
+      font-weight: 100;
+    }
+  
+    button {
+      background-color: #fff;
+      color: black;
+      padding: 10px;
+      margin-top: 10px;
+      border: 2px thin rgba(0, 0, 0, 0.234);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: black;
+        color: #fff;
+      }
+    }
+  }

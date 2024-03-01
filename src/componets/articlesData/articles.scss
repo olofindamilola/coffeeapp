@@ -5,31 +5,35 @@
   .articles-container {
     flex: 2;
     padding: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  hr{
+    background-color:#ccc;
+    color: #ccc;
+    margin-left: 20%;
+    height: 1px;
+    
   }
   
+  
   .article {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    // display: flex;
+    // align-items: center;
+    // margin-bottom: 20px;
   
     img {
-      width: 100px;
-      height: 100px;
-      margin-right: 10px;
+      width: 140px;
+      height: 140px;
       object-fit: cover;
     }
-  
-    .article-content {
-      flex: 1;
-      width: 50%; // Adjust the width as needed
-    }
-  
+
     button {
-      background-color: #2b030316;
+      background-color: #fff;
       color: black;
       padding: 10px;
       margin-top: 10px;
-      border: none;
+      border: 2px thin rgba(0, 0, 0, 0.234);
       cursor: pointer;
       transition: background-color 0.3s ease;
   
@@ -42,18 +46,25 @@
   
   .side-grid {
     flex: 1;
-    padding: 20px;
+    padding-right: 20%;
+    margin-top: 30px;
   
     .shop,
     .event,
     .scoreboard {
       margin-bottom: 20px;
+      
+      h3, h5, h6, p{
+        font-weight:100;
+        margin-bottom: 10px;
+
+      }
   
       button {
-        background-color: #2b030316;
+        background-color: #fff;
         color: black;
         padding: 10px;
-        border: none;
+        border: 2px thin rgba(0, 0, 0, 0.234);
         cursor: pointer;
         transition: background-color 0.3s ease;
   
@@ -62,6 +73,13 @@
           color: #fff;
         }
       }
+      &::after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid #ccc; // Adjust the border style as needed
+        margin-top: 20px; // Adjust the margin based on your design
+      }
     }
+    
   }
   

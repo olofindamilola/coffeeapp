@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="logoContainer">
          <img className="logo"src={logo} alt="Coffee roastery logo" />
           <form className='search'>
-              <img src={search} alt="Search icon" />
+              <img src={search} alt="Search icon" className='search-icon' />
               <input type="text" placeholder='search' />
                     <div className="socials">
                       <img className="icon" src={linkedln} alt="LinkedIn icon" />
@@ -25,8 +25,6 @@ const Navbar = () => {
           </form>
         </div>
               <div className="side">
-                
-               
                 <div className="nav-links">
                   <div className="nav-link"><a href="/about">About</a></div>
                   <div className="nav-link"><a href="/contact">Events</a></div>

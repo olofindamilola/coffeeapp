@@ -1,5 +1,5 @@
-// Pagination.js
 import React from 'react';
+import './pagination.scss'
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   const handlePrevious = () => {
@@ -12,7 +12,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
 
   return (
     <div className="pagination">
-      <button onClick={handlePrevious} disabled={currentPage === 1}>Previous</button>
+      <button onClick={handlePrevious} disabled={currentPage === 1} className='prev'>Previous</button>
       <div className="page-info">
         <p>{`Page ${currentPage} of ${totalPages}`}</p>
       </div>

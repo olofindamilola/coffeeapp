@@ -1,7 +1,7 @@
-// Article.jsx
 import React, { useState } from 'react';
+import './article.scss';
 
-const Article = ({ title, imageUrl, date, content }) => {
+const Article = ({ title, imageUrl, published, content }) => {
   const [showFullContent, setShowFullContent] = useState(false);
 
   const toggleContent = () => {
@@ -10,11 +10,13 @@ const Article = ({ title, imageUrl, date, content }) => {
 
   return (
     <div className='article'>
-        <div className="article-content">
+        <div className="img-container">
             <img src={imageUrl} alt={title} />
-            <h2>{title}</h2>
-            <p className='date'>{date}</p>
-            <p>{showFullContent ? content : `${content.slice(0, 20)}...`}</p>
+        </div>
+        <div className="article-content">
+            <h3>{title}</h3>
+            <h6 className='date'>{published}</h6>
+            <h5>{showFullContent ? content : `${content.slice(0, 80)}...`}</h5>
             <button className='readMore' onClick={toggleContent}>
             {showFullContent ? 'Read Less' : 'Read More'}
             </button>

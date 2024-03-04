@@ -1,40 +1,46 @@
 .sponsor {
-    text-align: center;
-    margin: 20px;
-  
-    h2 {
-      font-size: 1.5em;
+  text-align: center;
+  margin: 20px;
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 200;
+  }
+
+  hr {
+    background-color: #ccc;
+    color: #ccc;
+    height: 1px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-right: 20%;
+  }
+
+  .sponsor-columns {
+    // display: flex;
+    // justify-content: center;
+    // align-items: flex-start;
+  }
+
+  .sponsor-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: 0 20px;
+
+    img {
+      /* Maintain the aspect ratio */
       margin-bottom: 10px;
-      font-weight: 200;
-    }
-  
-    hr {
-      background-color: #ccc;
-      color: #ccc;
-      height: 1px;
-      border: none;
-      margin-top: 5px;
-      margin-bottom: 20px;
-      margin-right: 20%;
-    }
-  
-    .sponsor-columns {
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: flex-start;
-    }
-  
-    .sponsor-column {
-      display: flex;
-        justify-content: center;
-      align-items: center;
-    //   margin: 0 20px;
-  
-      img {
-       /* Maintain the aspect ratio */
-        margin-bottom: 10px;
-        width: 100px;
-      }
+      width: 100px;
     }
   }
-  
+
+  // Media query for responsiveness
+  @media only screen and (max-width: 768px) {
+    .sponsor-column {
+      margin: 0 10px; // Adjust margin for smaller screens
+    }
+  }
+}

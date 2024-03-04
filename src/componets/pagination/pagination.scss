@@ -1,42 +1,53 @@
-// Pagination.scss
 .pagination {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px; 
-  
-    button {
-      background-color: #fff;
-      color: black;
-      padding: 10px;
-      
-      border: 2px thin rgba(0, 0, 0, 0.234);
-      cursor: pointer;
-      transition: background-color 0.3s ease; 
-  
-      &:hover {
-        background-color: black;
-        color: #fff;
-      }
-  
-      &:disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-      }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  button {
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+
+    border: 2px thin rgba(0, 0, 0, 0.234);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: black;
+      color: #fff;
     }
 
-    .prev{
-        margin-left: 20%;
-      }
-  
-    .page-info {
-      display: flex;
-      align-items: center;
-  
-      p {
-        margin: 0;
-        margin-left: 10px; // Add some space between buttons and page count
-      }
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
     }
   }
-  
+
+  .prev {
+    margin-left: 20%;
+  }
+
+  .page-info {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin: 0;
+      margin-left: 10px; // Add some space between buttons and page count
+    }
+  }
+
+  // Media query for responsiveness
+  @media only screen and (max-width: 768px) {
+    flex-direction: column; // Stack items vertically on smaller screens
+
+    button {
+      margin-top: 10px; // Add margin between buttons
+    }
+
+    .prev {
+      margin-left: 0; // Remove left margin for the 'prev' button
+    }
+  }
+}

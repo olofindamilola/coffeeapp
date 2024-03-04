@@ -1,27 +1,21 @@
 .app {
-    display: flex;
-  }
-  
-  .articles-container {
-    flex: 2;
-    padding: 20px;
-    margin-left: 30px;
-    margin-bottom: 20px;
-  }
-  hr{
-    background-color:#ccc;
+  display: flex;
+}
+
+.articles-container {
+  flex: 2;
+  padding: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+
+  hr {
+    background-color: #ccc;
     color: #ccc;
     margin-left: 20%;
     height: 1px;
-    
   }
-  
-  
+
   .article {
-    // display: flex;
-    // align-items: center;
-    // margin-bottom: 20px;
-  
     img {
       width: 140px;
       height: 140px;
@@ -36,50 +30,88 @@
       border: 2px thin rgba(0, 0, 0, 0.234);
       cursor: pointer;
       transition: background-color 0.3s ease;
-  
+
       &:hover {
         background-color: black;
         color: #fff;
       }
     }
   }
-  
-  .side-grid {
-    flex: 1;
-    padding-right: 20%;
-    margin-top: 30px;
-  
-    .shop,
-    .event,
-    .scoreboard {
-      margin-bottom: 20px;
-      
-      h3, h5, h6, p{
-        font-weight:100;
-        margin-bottom: 10px;
+}
 
-      }
-  
-      button {
-        background-color: #fff;
-        color: black;
-        padding: 10px;
-        border: 2px thin rgba(0, 0, 0, 0.234);
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-  
-        &:hover {
-          background-color: black;
-          color: #fff;
-        }
-      }
-      &::after {
-        content: '';
-        display: block;
-        border-bottom: 1px solid #ccc; // Adjust the border style as needed
-        margin-top: 20px; // Adjust the margin based on your design
+.side-grid {
+  flex: 1;
+  padding-right: 20%;
+  margin-top: 30px;
+
+  .shop,
+  .event,
+  .scoreboard {
+    margin-bottom: 20px;
+
+    h3,
+    h5,
+    h6,
+    p {
+      font-weight: 100;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #fff;
+      color: black;
+      padding: 10px;
+      border: 2px thin rgba(0, 0, 0, 0.234);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: black;
+        color: #fff;
       }
     }
-    
+
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 1px solid #ccc; // Adjust the border style as needed
+      margin-top: 20px; // Adjust the margin based on your design
+    }
   }
-  
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 375px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .articles-container {
+    margin-left: 0;
+  }
+
+  .side-grid {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .articles-container {
+    margin-left: 0;
+  }
+
+  .side-grid {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .app {
+    flex-direction: row;
+  }
+}
